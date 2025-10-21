@@ -37,7 +37,18 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 ## 📖 Paper List (Listed in Time Order)
-
+🔹 [DISC: Dynamic Decomposition Improves LLM Inference Scaling](https://arxiv.org/pdf/2502.16706)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.16706)
+- 👤 **Authors:** Jonathan Light, Wei Cheng, Benjamin Riviere, Yue Wu, Masafumi Oyamada, Mengdi Wang, Yisong Yue, Santiago Paternain, Haifeng Chen
+- 🗓️ **Date:** 2025-09-07
+- 📑 **Publisher:** NeurIPS
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    Inference scaling methods for LLMs often rely on decomposing problems into steps (or groups of tokens), followed by sampling and selecting the best next steps. However, these steps and their sizes are often predetermined or manually designed based on domain knowledge. We propose dynamic decomposition, a method that adaptively and automatically partitions solution and reasoning traces into manageable steps during inference. By more effectively allocating compute – particularly through subdividing challenging steps and prioritizing their
+sampling – dynamic decomposition significantly improves inference efficiency. Experiments on benchmarks such as APPS, MATH, and LiveCodeBench demonstrate that dynamic decomposition outperforms static approaches, including token-level, sentence-level, and single-step decompositions, reducing the pass@10 error rate by 5.0%, 6.7%, and 10.5% respectively. These findings highlight the potential of dynamic decomposition to improve a wide range of inference scaling techniques.
+    </details>
+    
 🔹 [Test-Time Reinforcement Learning for GUI Grounding via Region Consistency](https://arxiv.org/abs/N/A)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
 - 👤 **Authors:** Yong Du, Yuchen Yan, Fei Tang, Zhengxi Lu, Chang Zong, Weiming Lu, Shengpei Jiang, Yongliang Shen
@@ -602,7 +613,18 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-
+🔹 [SFS: Smarter Code Space Optimization improves LLM Inference Scaling](https://openreview.net/pdf?id=MCHuGOkExF)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://openreview.net/pdf?id=MCHuGOkExF)
+- 👤 **Authors:** Jonathan Light, Yue Wu, Yiyou Sun, Wenchao Yu, Yanchi Liu, Xujiang Zhao, Ziniu Hu, Haifeng Chen, Wei Cheng.
+- 🗓️ **Date:** 2025-04-14
+- 📑 **Publisher:** ICLR
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    space and demonstrate how optimization-inspired techniques can enhance inference
+scaling. Based on this perspective, we propose SCATTERED FOREST SEARCH(SFS), a novel approach that improves solution diversity and better exploits feedback during evolutionary search. Our theoretical analysis illustrates how these methods help avoid local optima during optimization, leading to more efficient exploration. Extensive experiments on HumanEval, MBPP, APPS, CodeContests, and Leetcode reveal significant performance gains. For instance, our method
+achieves a pass@1 rate of 67.1% on HumanEval+ and 87.2% on HumanEval with GPT-3.5, marking improvements of 8.6% and 4.3% over the state-of-the-art, while also halving the iterations needed to find the correct solution. Furthermore, our approach scales more efficiently than existing search techniques, including tree search, line search, and repeated sampling.
+    </details>
 
 
 
